@@ -222,7 +222,6 @@ section{
 .connect__link-wrapper {
     display: flex;
     gap: 1rem;
-    flex-direction: column;
     align-items: flex-end;
 }
 .contacts__wrapper{
