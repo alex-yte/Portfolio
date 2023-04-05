@@ -228,7 +228,6 @@ section{
     display: flex;
     gap: 1rem;
 }
-
 .copyright{
     font-size: 1rem;
     text-transform: uppercase;
