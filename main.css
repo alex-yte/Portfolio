@@ -1,0 +1,236 @@
+/* 
+ fonts: 
+    font-family: 'Andika', sans-serif; — 700-h1, 400-p
+    font-family: 'Raleway', sans-serif; — 300-h2
+ */
+
+
+:root{
+    font-size: 62.5%;
+    --ff-h1: 'Andika', sans-serif;
+    --fw-h1: 700;
+    --fw-p: 400;
+    --ff-h2: 'Raleway', sans-serif;
+    --fw-h2: 300;
+}
+img{
+    width: 100%;
+}
+svg{
+    width: 2rem;
+}
+h1{
+    font-size: 5rem;
+    font-family: var(--ff-h1);
+    font-weight: var(--fw-h1);
+}
+h2{
+    font-size: 3.5rem;
+    font-family: var(--ff-h2);
+    font-weight: var(--fw-h2);    
+}
+p, a{
+    font-size: 2rem;
+    font-family: var(--ff-h1);
+    font-weight: var(--fw-p);
+    color: #000;
+    text-decoration: none;
+}
+
+
+body>*{
+    box-sizing: border-box;
+}
+
+.container{
+    width: min(100% - 2rem, 1200px);
+    margin-inline: auto;
+    /* margin: 0 auto; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(590px, 1fr));
+    gap: 2rem;
+}
+@media screen and (max-width: 1000px) {
+    .container{
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
+}
+
+section{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* header */
+
+.header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--ff-h1);
+    font-weight: var(--fw-h1);
+    font-size: 2rem;
+    width: 100%;
+    padding: 0 5rem;
+    height: 10rem;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0,0,0,.09);
+}
+
+.logo, .menu_item, .resume_open{
+    text-transform: uppercase;
+}
+
+.nav{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.resume_open{
+    
+}
+.resume_open>a{
+    text-decoration: none;
+}
+
+/* hero */
+
+.image{
+    width: 100%;
+}
+.hero__image{
+    -webkit-animation: morph 8s ease-in-out infinite;
+    animation: morph 8s ease-in-out infinite;
+    background-image: url(assets/img/webp/IMG_2304.webp);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 3px solid #2d2e32;
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    height: 35rem;
+    position: relative;
+    transition: all 1s ease-in-out;
+    width: 35rem;
+}
+@keyframes morph{
+    0% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+    50% {
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+    100% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}
+.hero_name{
+    text-align: end;
+}
+.hero_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    row-gap: 2rem;
+}
+.connect__link-wrapper, .stack__list-wrapper, .connect__link-container, .about__link-wrapper, .about__link-container{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap; 
+   align-items: center;
+   gap: 1rem;
+}
+
+
+/* about */
+
+.about_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap: 2rem;
+}
+
+@media screen and (max-width: 1180px) {
+    .about_content{
+        order: 2;
+    }
+}
+
+/* projects */
+
+.projects >.container{
+    display: block;
+}
+.projects__title{
+    transform: rotate(-90deg);
+}
+
+.projects__content-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+.grid-wrapper > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.grid-wrapper > div > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 5px;
+}
+
+.grid-wrapper {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-auto-rows: 200px;
+	grid-auto-flow: dense;
+}
+.grid-wrapper .wide {
+	grid-column: span 2;
+}
+.grid-wrapper .tall {
+	grid-row: span 2;
+}
+.grid-wrapper .big {
+	grid-column: span 2;
+	grid-row: span 2;
+}
+
+
+/* footer / contacts */
+
+.contacts__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.connect__link-wrapper {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.contacts__wrapper{
+    display: flex;
+    gap: 1rem;
+}
+
+.copyright{
+    font-size: 1rem;
+    text-transform: uppercase;
+}
