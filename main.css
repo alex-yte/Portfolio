@@ -109,7 +109,7 @@ section{
 .hero__image{
     -webkit-animation: morph 8s ease-in-out infinite;
     animation: morph 8s ease-in-out infinite;
-    background-image: url(assets/img/webp/IMG_2304.webp);
+    background-image: url(assets/img/WEBP/IMG_2304.webp);
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
