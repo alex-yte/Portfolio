@@ -191,7 +191,6 @@ section{
 	object-fit: cover;
 	border-radius: 5px;
 }
-
 .grid-wrapper {
 	display: grid;
 	grid-gap: 10px;
