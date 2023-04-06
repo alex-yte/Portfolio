@@ -37,6 +37,19 @@ p, a{
     text-decoration: none;
 }
 
+@media screen and (max-width: 500px) {
+    h1{
+        font-size: 3rem;
+        font-family: var(--ff-h1);
+        font-weight: var(--fw-h1);
+    }
+    h2{
+        font-size: 2rem;
+        font-family: var(--ff-h2);
+        font-weight: var(--fw-h2);    
+    }
+}
+
 
 body>*{
     box-sizing: border-box;
@@ -57,8 +70,8 @@ body>*{
 }
 
 section{
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 /* header */
@@ -106,19 +119,19 @@ section{
 .image{
     width: 100%;
 }
-.hero__image{
+.hero__image {
     -webkit-animation: morph 8s ease-in-out infinite;
     animation: morph 8s ease-in-out infinite;
     background-image: url(assets/img/WEBP/IMG_2304.webp);
-    background-position: 50%;
+    background-position: 70%;
     background-repeat: no-repeat;
     background-size: cover;
     border: 3px solid #2d2e32;
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-    height: 35rem;
+    height: 60rem;
     position: relative;
-    transition: all 1s ease-in-out;
-    width: 35rem;
+    transition: all .5s ease-in-out;
+    width: 60rem;
 }
 @keyframes morph{
     0% {
@@ -131,10 +144,10 @@ section{
         border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     }
 }
-.hero_name{
+.hero__name{
     text-align: end;
 }
-.hero_content{
+.hero__content{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -149,6 +162,18 @@ section{
    gap: 1rem;
 }
 
+@media screen and (max-width: 767px) {
+    .hero__heading{
+        text-align: right;
+    }
+    .hero__image{
+        margin-inline: auto;
+        height: 37vh;
+        width: 90%;
+    }
+    
+}
+
 
 /* about */
 
@@ -159,6 +184,9 @@ section{
     align-items: flex-start;
     row-gap: 2rem;
 }
+.about_paragraph{
+    line-height: 2.2rem;
+}
 
 @media screen and (max-width: 1180px) {
     .about_content{
@@ -167,11 +195,14 @@ section{
 }
 
 /* projects */
+.projects__title{
+    display: none;
+}
 
 .projects >.container{
     display: block;
 }
-.projects__title{
+.project__project-item0>h2{
     transform: rotate(-90deg);
 }
 
@@ -208,6 +239,20 @@ section{
 	grid-column: span 2;
 	grid-row: span 2;
 }
+@media screen and (max-width: 767px) {
+    .projects__title{
+        display: block;
+    }
+    .grid-wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .project__project-item0 .tall{
+        display: none;
+    }
+    /* .project__project-item1, .project__project-item2{
+        grid-column: span 2;
+    }*/
+} 
 
 
 /* footer / contacts */
@@ -231,4 +276,14 @@ section{
 .copyright{
     font-size: 1rem;
     text-transform: uppercase;
+}
+
+@media screen and (max-width:500px) {
+    .contacts__image{
+        display: none;
+    }
+    .contacts__content, .contacts__link-wrapper{
+        align-items: center;
+        gap: 2rem;
+    }    
 }
