@@ -17,8 +17,13 @@
     <title>D.Portfolio</title>
 </head>
 <body>
-    
-    <header class="header">
+    <aside class="go_home">
+        <a href="#top" >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"/></svg>
+        </a>
+    </aside>
+
+    <header id="top" class="header">
 
         <div class="logo">
             Denis Chirkov.dev
@@ -26,20 +31,18 @@
 
         <div class="nav">
             <ul class="menu">
-                <li class="menu_item">Home</li>
-                <li class="menu_item">about</li>
-                <li class="menu_item">Projects</li>
-                <li class="menu_item">Contacts</li>
+                <li class="menu_item"><a href="#top">Home</a></li>
+                <li class="menu_item"><a href="#about">about</a></li>
+                <li class="menu_item"><a href="#projects">Projects</a></li>
+                <li class="menu_item"><a href="#contacts">Contacts</a></li>
             </ul>
         </div>
 
-        <button class="resume_open">
-            <a href="https://drive.google.com/file/d/14aKd6G4J4J7PFNYofytOZrrt2dWipIiG/view?usp=share_link" target="_blank">Resume</a>
-        </button>
+        <a class="resume_open" href="https://drive.google.com/file/d/14aKd6G4J4J7PFNYofytOZrrt2dWipIiG/view?usp=share_link" target="_blank">Resume</a>
 
     </header>
 
-    <section class="hero">
+    <section id="hero" class="hero">
         <div class="container">
             <div class="hero__image image">
                 <!-- <img src="assets/img/webp/IMG_2304.webp" alt="dev's photo"> -->
@@ -74,7 +77,7 @@
                 </div>
 
                 <div class="stack__list-wrapper">
-                    <p class="connect__title">Stack:</p>
+                    <p class="connect__title">Tech:</p>
                     <div class="connect__link-container">
                         <div class="link-item">
                             <p>JS</p>
@@ -91,7 +94,7 @@
         </div>
     </section>
 
-    <section class="about">
+    <section id="about" class="about">
         <div class="container">
 
             <div class="about_content">
@@ -135,7 +138,7 @@
         </div>
     </section>
 
-    <section class="projects">
+    <section id="projects" class="projects">
         <div class="container">
             <div class="projects__wrapper">
                 
@@ -183,7 +186,7 @@
         </div>
     </section>
 
-    <footer class="contacts">
+    <footer id="contacts" class="contacts">
         <div class="container">
             
             <div class="contacts__image">

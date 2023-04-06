@@ -3,6 +3,10 @@
     font-family: 'Andika', sans-serif; — 700-h1, 400-p
     font-family: 'Raleway', sans-serif; — 300-h2
  */
+html {
+    scroll-behavior: smooth;
+}
+
 .hide{
     display: none !important;
 }
@@ -55,6 +59,12 @@ p, a{
 
 body>*{
     box-sizing: border-box;
+}
+
+aside{
+    position: fixed;
+    bottom: 5rem;
+    right: 5rem;
 }
 
 .container{
@@ -114,6 +124,12 @@ section{
 }
 .resume_open>a{
     text-decoration: none;
+}
+
+@media screen and (max-width: 1100px) {
+    .nav{
+        display: none;
+    }
 }
 
 /* hero */
