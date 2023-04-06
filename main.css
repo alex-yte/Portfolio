@@ -100,12 +100,19 @@ section{
     width: 100%;
     padding: 0 5rem;
     height: 10rem;
-    position: relative;
+    position: fixed;
+    inset: 0;
+    z-index: 2;
     box-shadow: 0 0 10px rgba(0,0,0,.09);
+    background: rgb(228, 228, 228);
 }
 
 .logo, .menu_item, .resume_open{
     text-transform: uppercase;
+    font-weight: 600;
+}
+.logo>a{
+    font-weight: 600;
 }
 
 .nav{
@@ -131,9 +138,16 @@ section{
         display: none;
     }
 }
+@media screen and (max-width: 768px) {
+    .header{
+        padding: 0 1rem;
+    }
+}
 
 /* hero */
-
+.hero{
+    padding-top: 15rem;
+}
 .image{
     width: 100%;
 }
