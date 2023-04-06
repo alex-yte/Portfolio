@@ -3,7 +3,9 @@
     font-family: 'Andika', sans-serif; — 700-h1, 400-p
     font-family: 'Raleway', sans-serif; — 300-h2
  */
-
+.hide{
+    display: none !important;
+}
 
 :root{
     font-size: 62.5%;
@@ -17,7 +19,7 @@ img{
     width: 100%;
 }
 svg{
-    width: 2rem;
+    width: 3.5rem;
 }
 h1{
     font-size: 5rem;
@@ -122,7 +124,7 @@ section{
 .hero__image {
     -webkit-animation: morph 8s ease-in-out infinite;
     animation: morph 8s ease-in-out infinite;
-    background-image: url(assets/img/WEBP/IMG_2304.webp);
+    background-image: url(assets/img/IMG_1918.HEIC);
     background-position: 70%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -159,7 +161,7 @@ section{
    flex-direction: row;
    flex-wrap: nowrap; 
    align-items: center;
-   gap: 1rem;
+   gap: 2.5rem;
 }
 
 @media screen and (max-width: 767px) {
@@ -266,7 +268,7 @@ section{
 .contacts__link-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2.5rem;
     align-items: flex-end;
 }
 .contacts__wrapper{
