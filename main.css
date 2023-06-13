@@ -298,6 +298,10 @@ picture{
     /* .project__project-item1, .project__project-item2{
         grid-column: span 2;
     }*/
+    .contacts__content, .contacts__link-wrapper{
+        align-items: flex-start;
+        gap: 2rem;
+    }
 } 
 
 
@@ -333,10 +337,6 @@ picture{
     }
     .contacts__image{
         display: none;
-    }
-    .contacts__content, .contacts__link-wrapper{
-        align-items: flex-start;
-        gap: 2rem;
     }
     svg {
         width: 2.7rem;
