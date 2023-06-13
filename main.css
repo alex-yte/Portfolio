@@ -63,7 +63,7 @@ body>*{
 
 aside{
     position: fixed;
-    bottom: 5rem;
+    bottom: 4rem;
     right: 5rem;
 }
 
@@ -81,7 +81,7 @@ aside{
     }
 }
 
-section{
+section, footer{
     padding-top: 5%;
     padding-bottom: 5%;
 }
@@ -315,7 +315,10 @@ section{
         display: none;
     }
     .contacts__content, .contacts__link-wrapper{
-        align-items: center;
+        align-items: flex-start;
         gap: 2rem;
+    }
+    svg {
+        width: 2.7rem;
     }    
 }
