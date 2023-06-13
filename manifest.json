@@ -1,0 +1,8 @@
+{
+    "name": "DC.Dev",
+    "short_name": "DC.Dev",
+    "start_url": ".",
+    "display": "standalone",
+    "description": "A portfolio website."
+  }
+  
