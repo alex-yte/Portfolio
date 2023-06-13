@@ -311,6 +311,12 @@ section, footer{
 }
 
 @media screen and (max-width:500px) {
+    .header{
+        height: 7rem;
+    }
+    .hero{
+        padding-top: 10rem;
+    }
     .contacts__image{
         display: none;
     }
