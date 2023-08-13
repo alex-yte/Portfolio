@@ -110,7 +110,7 @@ footer {
   inset: 0;
   z-index: 5;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
-  background: rgb(228, 228, 228, 0.94);
+  background: #e4e4e4f0;
   margin-inline: auto;
   margin-top: 1rem;
 }
@@ -161,6 +161,11 @@ footer {
     width: 100%;
     margin-top: 0;
     border-radius: 0 0 3rem 3rem;
+  }
+  footer {
+    width: 100%;
+    margin-top: 0;
+    border-radius: 3rem 3rem 0 0;
   }
   .nav {
     display: none;
@@ -227,13 +232,23 @@ footer {
 }
 .ghLogo,
 .liLogo,
-.cvLogo {
+.cvLogo,
+.igLogo,
+.tgLogo {
   fill: #000;
   color: #000;
   transition: fill ease-in-out 0.2s color ease-in-out 0.2s;
 }
 .liLogo:hover {
   fill: #0a66c2;
+  transition: fill ease-in-out 0.2s;
+}
+.tgLogo:hover {
+  fill: #28a4e4;
+  transition: fill ease-in-out 0.2s;
+}
+.igLogo:hover {
+  fill: #df03e0;
   transition: fill ease-in-out 0.2s;
 }
 .ghLogo:hover {
@@ -463,4 +478,37 @@ picture {
 }
 
 .popup__window {
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: rgba(3, 14, 73, 0.9);
+  }
+  .hero__heading,
+  .logo > a,
+  .hero__name,
+  .connect__title,
+  .link-item > p,
+  .about_heading,
+  .about_title,
+  .about_paragraph,
+  .project__project-item0 > h2,
+  .contacts__title,
+  .contacts__cto,
+  .copyright {
+    color: #e4e4e4f0;
+  }
+  .ghLogo,
+  .liLogo,
+  .cvLogo,
+  .tgLogo,
+  .igLogo {
+    fill: #e4e4e4f0;
+    color: #e4e4e4f0;
+    transition: fill ease-in-out 0.2s color ease-in-out 0.2s;
+  }
+  .header,
+  #contacts {
+    background-color: #000;
+  }
 }
