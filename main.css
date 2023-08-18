@@ -39,6 +39,7 @@ img {
 }
 svg {
   width: 3.5rem;
+  height: auto;
 }
 h1 {
   font-size: 5rem;
@@ -49,6 +50,16 @@ h2 {
   font-size: 3.5rem;
   font-family: var(--ff-h2);
   font-weight: var(--fw-h2);
+}
+h3 {
+  font-size: 2.75rem;
+  font-family: var(--ff-h2);
+  font-weight: var(--fw-h2);
+}
+li {
+  font-size: 2rem;
+  font-family: var(--ff-h1);
+  font-weight: var(--fw-p);
 }
 p,
 a {
@@ -62,7 +73,13 @@ a {
   border-radius: 3rem;
   overflow: hidden;
 }
-
+@media screen and (max-width: 576px) {
+  button.btn-close {
+    width: 2em;
+    height: 2em;
+    background-size: cover;
+  }
+}
 @media screen and (max-width: 500px) {
   h1 {
     font-size: 3rem;
