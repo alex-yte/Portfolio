@@ -367,14 +367,15 @@ picture {
 .modal-footer {
   gap: 2.5rem;
   padding-right: 2.5rem;
-  position: absolute;
-  bottom: 0;
-  right: 0;
 }
 img.project-image {
   border-radius: 0 0 0 2rem;
 }
-
+.btn_close {
+  font-size: 2rem;
+  font-family: var(--ff-h2);
+  font-weight: var(--fw-h2);
+}
 @media screen and (max-width: 1920px) {
   .hero__image {
     background-image: url(assets/img/img_1918.webp);
@@ -457,11 +458,6 @@ img.project-image {
   }
 }
 @media screen and (max-width: 576px) {
-  button.btn-close {
-    width: 2em;
-    height: 2em;
-    background-size: cover;
-  }
   .modal-body > .row {
     gap: 3rem;
   }
@@ -516,7 +512,8 @@ img.project-image {
   .project__project-item0 > h2,
   .contacts__title,
   .contacts__cto,
-  .copyright {
+  .copyright,
+  .modal-title {
     color: #e4e4e4f0;
   }
   .ghLogo,
@@ -532,13 +529,19 @@ img.project-image {
   #contacts {
     background-color: #030e49;
   }
+  .btn_close {
+    color: #e4e4e4f0;
+    border-color: #e4e4e4f0;
+  }
+  .btn_close:hover {
+    color: #e4e4e4f0;
+    background-color: #030d49af;
+    border-color: var(--bs-btn-hover-border-color);
+  }
   .modal-content {
     background-color: rgba(3, 14, 73, 0.7);
   }
   .modal__text * {
     color: #e4e4e4f0;
-  }
-  .btn-close {
-    background: url("assets/icons/close.svg");
   }
 }
