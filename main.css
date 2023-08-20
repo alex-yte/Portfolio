@@ -99,8 +99,8 @@ footer {
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
-  font-family: var(--ff-h1);
-  font-weight: var(--fw-h1);
+  font-family: var(--ff-h2);
+  font-weight: var(--fw-h2);
   font-size: 2rem;
   width: min(100% - 2rem, 1500px);
   padding: 0 5rem;
@@ -470,8 +470,8 @@ img.project-image {
 @media screen and (max-width: 500px) {
   h1 {
     font-size: 3rem;
-    font-family: var(--ff-h1);
-    font-weight: var(--fw-h1);
+    font-family: var(--ff-h2);
+    font-weight: var(--fw-h2-bold);
   }
   h2 {
     font-size: 2rem;

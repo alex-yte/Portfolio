@@ -1,33 +1,16 @@
-// Assuming you have a mapping of countries to languages
-const countryToLanguage = {
-    'RU': 'ru', // Russia
-    // ...
-};
 
-// Check if the user's language preference is already set
-const userLanguagePreference = localStorage.getItem('userLanguage');
-console.log(userLanguagePreference);
+let preferedLanguages = window.navigator.languages;
+console.log(preferedLanguages);
 
-if (!userLanguagePreference) {
-    // Get the user's country using a geolocation API (example)
-    const userCountry = getUserCountry(); // Replace with your geolocation logic
+let mainLanguage = preferedLanguages[0];
+console.log(mainLanguage);
 
-    // Determine the language based on the country
-    const language = countryToLanguage[userCountry] || 'en'; // Default to English
+let allRusAL = ["ru", "ru-RU", "ru-UA", "ru-BY", "ru-KZ", "ru-md"];
+let allEngAL = [ "en", "en-US", "en-GB", "en-CA", "en-AU", "en-IN", "en-NZ", "en-ZA"]
 
-    // Set the language preference in a cookie or local storage
-    localStorage.setItem('userLanguage', language);
+function isRussian(element, index, array) {
+    return element === mainLanguage;
+  }
 
-    // Redirect the user to the appropriate language version of the website
-    if (userCountry === 'RU') {
-        window.location.href = 'https://den.com/ru/'; // Open in Russian
-    } else {
-        window.location.href = 'https://den.com/en/'; // Open in English
-    }
-}
+console.log(allRusAL.some(isRussian));
 
-
-$( document ).ready(function() {
-    console.log( "ready!" );
-}); 
-console.log('hello vercel app!');
