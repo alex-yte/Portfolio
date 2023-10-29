@@ -368,6 +368,7 @@ picture {
 }
 .modal-footer {
   gap: 2.5rem;
+  padding: 2rem;
   padding-right: 2.5rem;
 }
 img.project-image {
