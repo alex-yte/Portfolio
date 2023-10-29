@@ -3,6 +3,14 @@
     font-family: 'Andika', sans-serif; — 700-h1, 400-p
     font-family: 'Raleway', sans-serif; — 300-h2
  */
+
+::-webkit-scrollbar {
+    width: 2px;
+}
+::-webkit-scrollbar-thumb {
+    background: black;
+}
+
 .container,
 .container-fluid,
 .container-lg,
