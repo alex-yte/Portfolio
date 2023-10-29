@@ -467,6 +467,11 @@ img.project-image {
   .modal-dialog {
     max-width: none;
   }
+ .modal-footer {
+  gap: 2.5rem;
+  padding: 2rem;
+  padding-bottom: 3rem;
+}
 }
 @media screen and (max-width: 500px) {
   h1 {
