@@ -14,3 +14,13 @@ function isRussian(element, index, array) {
 
 console.log(allRusAL.some(isRussian));
 
+//aside.go_home
+
+document.querySelectorAll(".go_home").forEach((link) => {
+  link.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  })
+})

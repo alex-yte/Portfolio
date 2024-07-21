@@ -561,3 +561,7 @@ img.project-image {
     color: #e4e4e4f0;
   }
 }
+
+.go_home{
+  cursor: pointer;
+}
